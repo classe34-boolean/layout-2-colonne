@@ -1,0 +1,50 @@
+/* debug */
+header {
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: lightskyblue;
+}
+
+/* main {
+    background-color: lightgrey;
+} */
+
+aside {
+    height: 600px;
+    background-color: blue;
+}
+
+section {
+    height: 500px;
+    background-color: magenta;
+}
+
+footer {
+    height: 150px;
+    margin-top: 20px;
+    background-color: lightskyblue;
+}
+/* /debug */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    width: 28%;
+    float: left;
+}
+
+section {
+    width: 70%;
+    margin-left: 2%;
+    float: left;
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
